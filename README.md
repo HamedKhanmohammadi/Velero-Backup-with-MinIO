@@ -176,7 +176,7 @@ kubectl get pods -n velero
 ### Step 1: Take a Backup
 
 ```bash
-velero backup create BACKUP_NAME --include-namespaces '*' --wait
+velero backup create BACKUP-NAME --include-namespaces '*' --wait
 ```
 Example:
 ```bash
@@ -187,7 +187,7 @@ velero backup create my-backup --include-namespaces '*' --wait
 
 ```bash
 velero get backup
-velero restore create --from-backup BACKUP_NAME
+velero restore create --from-backup BACKUP-NAME
 ```
 
 ### Step 3: Schedule Backups
