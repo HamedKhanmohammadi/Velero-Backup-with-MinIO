@@ -178,6 +178,11 @@ kubectl get pods -n velero
 ```bash
 velero backup create BACKUP_NAME --include-namespaces '*' --wait
 ```
+Example:
+```bash
+velero backup create my-backup --include-namespaces '*' --wait
+```
+![image](https://github.com/user-attachments/assets/ec6b5fcb-6b17-475c-ba13-eaf9f8e76a01)
 
 ### Step 2: Restore from a Backup
 
