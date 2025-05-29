@@ -13,7 +13,7 @@ This guide walks you through setting up MinIO for Velero backups and integrating
 
 ##  Install MinIO Single-Node Instance
 
-⚙️ **Run all these steps on the MinIO server** (can be the same as your Kubernetes master or a separate machine).
+ **Run all these steps on the MinIO server** (can be the same as your Kubernetes master or a separate machine).
 
 ### Step 1: Create and Edit the `docker-compose.yml` File
 
@@ -200,4 +200,4 @@ velero schedule create backup --schedule "0 7 * * *"
 
 ---
 
-✅ You now have a complete Velero + MinIO + CSI backup solution!
+ You now have a complete Velero + MinIO + CSI backup solution!
