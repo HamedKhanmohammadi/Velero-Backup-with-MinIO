@@ -5,13 +5,13 @@ This guide walks you through setting up MinIO for Velero backups and integrating
 
 ---
 
-## 📦 Backup and Copy to Remote Storage (Simple MinIO)
+##  Backup and Copy to Remote Storage (Simple MinIO)
 
 > Source: https://github.com/farshadnick/kuber-in-action/tree/main/backup/velero
 
 ---
 
-## 🖥️ Install MinIO Single-Node Instance
+##  Install MinIO Single-Node Instance
 
 ⚙️ **Run all these steps on the MinIO server** (can be the same as your Kubernetes master or a separate machine).
 
@@ -80,7 +80,7 @@ Login credentials:
 
 ---
 
-## 🧭 How to Create a MinIO Bucket for Velero Backups
+##  How to Create a MinIO Bucket for Velero Backups
 
 ### 1. Access the MinIO Web Console
 
@@ -113,7 +113,7 @@ velero-backups
 
 > This bucket will be used by Velero to store backup data.
 
-### ✅ Optional: Confirm Access from Velero
+###  Optional: Confirm Access from Velero
 
 ```bash
 kubectl get backupstoragelocations -n velero
@@ -128,9 +128,9 @@ default   Available   <time>           <age>   true
 
 ---
 
-## ☁️ Install Velero
+##  Install Velero
 
-⚙️ **Run these steps on your Kubernetes control node (master).**
+ **Run these steps on your Kubernetes control node (master).**
 
 ### Step 1: Create MinIO Bucket Credentials File
 
@@ -171,7 +171,7 @@ kubectl get pods -n velero
 
 ---
 
-## 🔄 Use Velero: Backup, Restore, and Schedule
+##  Use Velero: Backup, Restore, and Schedule
 
 ### Step 1: Take a Backup
 
